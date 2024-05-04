@@ -54,8 +54,8 @@ include('../include/connect.php');
                     <?php
                     foreach($categories as $category)
                     { ?> 
-                        <option value=''> <?php 
-                        echo $category['$category_name']  ?>
+                        <option value='<?php echo $category['category_id']?>'> <?php 
+                        echo $category['category_name']  ?>
                         </option>                   
                     <?php } ?>                    
                 </select>
@@ -75,7 +75,7 @@ include('../include/connect.php');
                     foreach($types as $type)
                     { ?> 
                         <option value=''> <?php 
-                        echo $type['$typee_name']  ?>
+                        echo $type['typee_name']  ?>
                         </option>                   
                     <?php } ?>
                 </select>
